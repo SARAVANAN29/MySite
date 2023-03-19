@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title>Journey</title>
+<script type="text/javascript" src="./script.js"></script>
+<style>
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+  }
+
+  .container,
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    background: linear-gradient(45deg, #209cff, #68e0cf);
+    padding: 3rem 0;
+  }
+
+  .wrapper {
+    background: #eaf6ff;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+  }
+
+  .sessions {
+    margin-top: 2rem;
+    border-radius: 120px;
+    position: relative;
+  }
+
+  li {
+    padding-bottom: 1.5rem;
+    border-left: 2px solid #9b9ae9;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+
+  .time {
+    color: #2a2839;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* @include mobile-and-up{
+    font-size: .9rem;
+  } */
+    /* @include mobile-only{
+    margin-bottom: .3rem;
+    font-size: 0.85rem;
+  } */
+  }
+
+  p {
+    color: #4f4f4f;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+
+    @include mobile-only {
+      font-size: .9rem;
+    }
+  }
+
+  table,
+  td,
+  th {
+    width: 100px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    border-width: medium;
+  }
+  td, th {
+    border-width: medium;
+  }
+</style>
+
+<body onload="getHide()">
+  <div class="container" id="journey">
+    <div class="wrapper">
+      <h1>My Journey as Software Engineer 😅></h1>
+      <ul class="sessions">
+        <li>
+          <div class="time">2013</div>
+          <p>Joined to PG Engineering in the Field of EEE</p>
+        </li>
+        <li>
+          <div class="time">2017</div>
+          <p>Successfully completed 🤷</p>
+        </li>
+        <li>
+          <div class="time">Aug - 2017</div>
+          <p>Joined as a <b>software engineer</b> at <br> <b>Urjanet Engergy Solutions Pvt Ltd.</b></p>
+        </li>
+        <li>
+          <div class="time">Jun - 2020</div>
+          <p>Joined as a <b>Programmer Analyst</b> at <br> <b>Cognizant</b></p>
+        </li>
+        <li>
+          <div class="time">Sep - 2021</div>
+          <p>Joined as a <b>Senior Engineer</b> at <br><b>QBurst Technologies Pvt Ltd.</b></p>
+        </li>
+        <li>
+          <div class="time">...</div>
+          <p>To be continued...</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container" id="gold">
+    <div class="wrapper">
+      <h1>Gold Jewellery Calculator</h1>
+      <ul class="sessions"></ul>
+      <label for="gold_rate">Gold Rate: </label>
+      <input type="number" id="gold_rate" name="gold_rate"><br><br>
+      <label for="gold_weight">Gold Net Weight:</label>
+      <input type="number" id="gold_weight" name="gold_weight"><br><br>
+      <label for="gold_percentage">VAT Percentage: </label>
+      <input type="number" id="gold_percentage" name="gold_percentage"><br><br>
+      <label for="gst">GST percentage: </label>
+      <input type="number" id="gst_percentage" name="gst_percentage" value="3"><br><br>
+      <button onclick="myFunction()">Submit</button><br><br>
+      <label for="gold_cost_alone">Gold Cost Alone: </label>
+      <input type="number" id="gold_cost_alone" name="gold_cost_alone"><br><br>
+      <label for="gold_percentage_cost_alone">VAT Percentage Cost Alone: </label>
+      <input type="number" id="gold_percentage_cost_alone" name="gold_percentage_cost_alone"><br><br>
+      <label for="gold_total_cost">Total Cost: </label>
+      <input type="number" id="gold_total_cost" name="gold_total_cost"><br><br>
+      <label for="gst_cost">GST Cost Alone:</label>
+      <input type="number" id="gst_cost" name="gst_cost"><br><br>
+      <label for="gold_jewel_total">Net Total: </label>
+      <input type="number" id="gold_jewel_total" name="gold_jewel_total"><br><br>
+      <br>
+      <br>
+      <br>
+      <div id="table">
+        <table style="width:100%">
+          <thead>
+            <th>SI.No</th>
+            <th>Gold Rate</th>
+            <th>Grams</th>
+            <th>Gold Cost</th>
+            <th>VAT %</th>
+            <th>VAT % Cost</th>
+            <th>GST %</th>
+            <th>GST Cost</th>
+            <th>Net Total</th>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
