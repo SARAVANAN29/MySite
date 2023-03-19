@@ -7,6 +7,7 @@
   li {
     list-style: none;
     padding: 0;
+    border-radius: 10%;
   }
 
   .container,
@@ -38,7 +39,7 @@
 
   li {
     padding-bottom: 1.5rem;
-    border-left: 2px solid #9b9ae9;
+    border-left: 3px solid #9b9ae9;
     position: relative;
     padding-left: 20px;
     margin-left: 10px;
@@ -77,38 +78,52 @@
     text-align: center;
     border-width: medium;
   }
-  td, th {
+
+  td,
+  th {
     border-width: medium;
+  }
+  .office {
+    color: #8700ff;
+  }
+  .position{
+    color: black
   }
 </style>
 
 <body onload="getHide()">
   <div class="container" id="journey">
     <div class="wrapper">
-      <h1>My Journey as Software Engineer 😅></h1>
+      <h1>My Journey as Software Engineer 😅</h1>
       <ul class="sessions">
         <li>
+          <br>
           <div class="time">2013</div>
           <p>Joined to PG Engineering in the Field of EEE</p>
         </li>
         <li>
+          <br>
           <div class="time">2017</div>
           <p>Successfully completed 🤷</p>
         </li>
         <li>
+          <br>
           <div class="time">Aug - 2017</div>
-          <p>Joined as a <b>software engineer</b> at <br> <b>Urjanet Engergy Solutions Pvt Ltd.</b></p>
+          <p>Joined as a <b class="position">software engineer</b> at <br> <b class="office">Urjanet Engergy Solutions Pvt Ltd.</b></p>
         </li>
         <li>
+          <br>
           <div class="time">Jun - 2020</div>
-          <p>Joined as a <b>Programmer Analyst</b> at <br> <b>Cognizant</b></p>
+          <p>Joined as a <b class="position">Programmer Analyst</b> at <br> <b class="office">Cognizant</b></p>
         </li>
         <li>
+          <br>
           <div class="time">Sep - 2021</div>
-          <p>Joined as a <b>Senior Engineer</b> at <br><b>QBurst Technologies Pvt Ltd.</b></p>
+          <p>Joined as a <b class="position">Senior Engineer</b> at <br><b class="office">QBurst Technologies Pvt Ltd.</b></p>
         </li>
         <li>
-          <div class="time">...</div>
+          <div class="time"></div>
+          <br><br>
           <p>To be continued...</p>
         </li>
       </ul>
